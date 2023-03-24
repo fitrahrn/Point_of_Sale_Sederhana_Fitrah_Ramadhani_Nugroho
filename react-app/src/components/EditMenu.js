@@ -1,14 +1,15 @@
 import React, {useState, useEffect} from 'react';
-import { Link, useParams } from "react-router-dom";
-import axios, { formToJSON } from "axios";
+import { useParams ,useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const EditMenu= () => {
     const [gambar, setGambar] = useState("No File Selected");
-    const [file, setFile] = useState("");
+    const [setFile] = useState("");
     const [preview, setPreview] = useState("");
     const [nama, setNama] = useState("");
     const [harga, setHarga] = useState("");
     const { id } = useParams();
+    const navigate = useNavigate();
   
     useEffect(() => {
       getMenuById();
@@ -29,6 +30,7 @@ const EditMenu= () => {
         await axios.put(`http://127.0.0.1:8000/api/menus/${id}`, formData, {
           headers:{"Content-type": "application/json"},
         });
+        navigate(`/menu`)
       } catch (error) {
         console.log(error);
       }

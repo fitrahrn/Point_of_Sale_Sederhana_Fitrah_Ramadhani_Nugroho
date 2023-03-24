@@ -36,3 +36,36 @@
     transform: rotate(360deg);
   }
 }
+.grid-container{
+  display: grid;
+  grid-template-columns: 60% 40%;
+  padding: 20px;
+
+}
+.grid-food{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+}
+
+label {
+  font-family: Montserrat;
+}
+h1{
+  font-family: Montserrat;
+  font-size: xx-large;
+}
+h2{
+  font-family: Montserrat;
+  font-size: medium;
+}
+.bill{
+  background-color: white;
+}
+#listObject{
+  text-align: start;
+  padding-left: 10px;
+}
+.list-menu{
+  display:block;
+}
