@@ -2,7 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-
+Use App\Http\Controllers\MenuController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -13,7 +13,8 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "api" middleware group. Make something great!
 |
 */
-
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::get('menus', [MenuController::class, 'index']);
+Route::get('menus/{menu}', [MenuController::class, 'show']);
+Route::post('menus', [MenuController::class, 'store']);
+Route::put('menus/{menu}', [MenuController::class, 'update']);
+Route::delete('menus/{menu}', [MenuController::class, 'delete']);
