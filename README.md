@@ -8,7 +8,8 @@ Frontend -dibuat menggunakan javascript dan framework React.js
 ### Cara Menjalankan server backend
 
 1. Buka Terminal (CMD/Powershell/gitbash)
-2. Pindahkan terminal ke folder Assessment_Intern_Fitrah_Ramadhani_Nugroho/laravel
+2. Pindahkan terminal ke folder 
+Point_of_Sale_Sederhana_Fitrah_Ramadhani_Nugroho/laravel
 3. Ketik "php artisan serve" di terminal untuk menjalankan server
 4. Pastikan server berjalan di link "http:127.0.0.1:8000"
 5. Buka server mysql
@@ -20,7 +21,8 @@ Frontend -dibuat menggunakan javascript dan framework React.js
 
 ### Cara Menjalankan server frontend
 
-1. Buat terminal baru dan pindahkan ke folder Assessment_Intern_Fitrah_Ramadhani_Nugroho/react-app
+1. Buat terminal baru dan pindahkan ke folder 
+Point_of_Sale_Sederhana_Fitrah_Ramadhani_Nugroho/react-app
 2. ketik "npm install" untuk menginstal dependency dan library yang dibutuhkan
 3. Ketik "npm-start" untuk menjalankan server
 4. terminal akan otomatis membuka browser dan membuka web di "localhost:3000"
