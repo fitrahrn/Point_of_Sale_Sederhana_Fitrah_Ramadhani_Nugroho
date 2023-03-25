@@ -4,7 +4,7 @@ import axios from "axios";
 
 const AddMenu = () => {
     const [gambar, setGambar] = useState("No File Selected");
-    const [setFile] = useState("");
+    const [file,setFile] = useState("");
     const [preview, setPreview] = useState("");
     const [nama, setNama] = useState("");
     const [harga, setHarga] = useState("");
